@@ -666,39 +666,39 @@ func accumulateRewards(config *params.ChainConfig, state *state.StateDB, header 
     var blockReward *big.Int
     switch {
     case blockNumber <= 250_000:
-        // 1 – 250 000: 1280 TESLA
+        // 1 – 250 000: 128,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("128000000000000000000000", 10)
     case blockNumber <= 500_000:
-        // 250 001 – 500 000: 640 TESLA
+        // 250 001 – 500 000: 64,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("64000000000000000000000", 10)
     case blockNumber <= 1_000_000:
-        // 500 001 – 1 000 000: 320 TESLA
+        // 500 001 – 1 000 000: 32,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("32000000000000000000000", 10)
     case blockNumber <= 2_000_000:
-        // 1 000 001 – 2 000 000: 160 TESLA
+        // 1 000 001 – 2 000 000: 16,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("16000000000000000000000", 10)
     case blockNumber <= 4_000_000:
-        // 2 000 001 – 4 000 000: 80 TESLA
+        // 2 000 001 – 4 000 000: 8,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("8000000000000000000000", 10)
     case blockNumber <= 8_000_000:
-        // 4 000 001 – 8 000 000: 40 TESLA
+        // 4 000 001 – 8 000 000: 4,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("4000000000000000000000", 10)
     case blockNumber <= 16_000_000:
-        // 8 000 001 – 16 000 000: 20 TESLA
+        // 8 000 001 – 16 000 000: 2,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("2000000000000000000000", 10)
     case blockNumber <= 32_000_000:
-        // 16 000 001 – 32 000 000: 10 TESLA
+        // 16 000 001 – 32 000 000: 1,000 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("1000000000000000000000", 10)
     default:
-        // 32 000 001 and above: 5 TESLA
+        // 32 000 001 and above: 500 TESLA
         blockReward = new(big.Int)
         blockReward.SetString("500000000000000000000", 10)
     }
